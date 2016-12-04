@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>The Psychic Game</title>
+  </head>
+  <body>
+
+   <!-- When we start playing the game, our HTML will be placed into this div. -->
+
+    <div id="game">
+      <h1>The Psychic Game</h1>
+      <p>Guess what letter I am thinking of!</p>
+      <p >Wins: <span id="wins">0</span></p>
+      <p >Losses: <span id="losses">0</span></p>
+      <p >Guesses Left: <span id="guesses">9</span></p>
+      <p>Your Guesses So Far: <span id="guessesSoFar">[ ]</span></p>
+
+    </div>
+
+    <script>
+    
+      // Use these variables for wins, losses, and guesses //
+
+      var wins = 0;
+      var losses = 0; 
+      var guesses = 9; 
+      var guessesSoFar = ""; 
+
+      // Creating an array for letters of the alphabet.
+      var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+
+      // Looping through each item in the array and logging a message to the console.
+      for (var i = 0; i < vegetables.length; i++) {
+        console.log("I love " + vegetables[i]);
+      }
+
+    </script>
+    
+  </body>
+</html>
