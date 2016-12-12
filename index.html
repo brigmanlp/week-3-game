@@ -2,6 +2,9 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
+
+    <!-- Bootstrap CSS and Javascript -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
     <title>The Psychic Game</title>
   </head>
   <body>
@@ -11,29 +14,102 @@
     <div id="game">
       <h1>The Psychic Game</h1>
       <p>Guess what letter I am thinking of!</p>
-      <p >Wins: <span id="wins">0</span></p>
-      <p >Losses: <span id="losses">0</span></p>
-      <p >Guesses Left: <span id="guesses">9</span></p>
-      <p>Your Guesses So Far: <span id="guessesSoFar">[ ]</span></p>
+      <p >Wins: <span id="wins"></span></p>
+      <p >Losses: <span id="losses"></span></p>
+      <p >Guesses Left: <span id="guesses"></span></p>
+      <p>Your Guesses So Far: <span id="guessesSoFar"></span></p>
 
     </div>
 
     <script>
     
-      // Use these variables for wins, losses, and guesses //
+      // // Use these variables for wins, losses, and guesses //
 
-      var wins = 0;
-      var losses = 0; 
-      var guesses = 9; 
-      var guessesSoFar = ""; 
+      // var wins = 0;
+      // var losses = 0; 
+      // var guessesLeft = 9; 
+      // var guessesSoFar = []; 
 
-      // Creating an array for letters of the alphabet.
-      var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+      // // Creating an array for letters of the alphabet for possible Computer Choices.
+      
+      // var alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-      // Looping through each item in the array and logging a message to the console.
-      for (var i = 0; i < vegetables.length; i++) {
-        console.log("I love " + vegetables[i]);
-      }
+      // var computerChoices = alphabet.split(""); //the argument is a null string
+
+      // // Sets the computerGuess variable equal to a random choice from the computerChoice array.
+        
+      // function computerSelection(){ return computerChoices[Math.floor(Math.random() * computerChoices.length)];
+      // }
+
+      // var computerGuess = computerSelection ();
+      // console.log("the computer guessed: " + computerGuess);
+      
+      // // When the user presses a key, it will run the following function...
+      
+      // document.onkeyup = function(event) {
+
+      //     // Determine which key was pressed
+        
+      //     var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+
+      //     //push userGuess into the variable guessesSoFar
+
+      //     // userGuess.push(guessesSoFar); was WRONG!! Returned error that is was not a function, I had these two variables backwards. 
+      //     guessesSoFar.push(userGuess);
+      //     console.log(guessesSoFar);
+      //     document.getElementById("guessesSoFar").innerHTML = guessesSoFar.join(" ");
+
+
+      //     //This logic determines the outcome of the game (win, loss, guesses left, and increments the appropriate counter.
+
+      //     if (userGuess === computerGuess) {
+      //       //increases win counter
+      //       wins++;
+      //       console.log("wins:" + wins);
+      //       document.getElementById("wins").innerHTML = wins;
+
+      //       //resets the computer's guess
+      //       computerGuess = computerSelection ();
+      //       console.log("the computer guessed: " + computerGuess); 
+      //       //resets the number of guesses
+      //       guessesLeft=9;
+      //       console.log("guessesLeft:" + guessesLeft);
+      //       document.getElementById("guesses").innerHTML = guessesLeft;
+
+      //       //resets Your Guesses so Far
+      //       guessesSoFar=[]; 
+
+      //     }
+
+      //     else {
+      //       //decreases guesses counter
+      //       guessesLeft--;
+      //       console.log("guessesLeft:" + guessesLeft); 
+      //       document.getElementById("guesses").innerHTML = guessesLeft; 
+      //       console.log(userGuess);
+          
+      //       }
+
+      //     if (guessesLeft === 0) {
+      //       //increases losses counter
+      //       losses++;
+      //       console.log("losses:" + losses);
+      //       document.getElementById("losses").innerHTML = losses;
+
+      //       //resets the guesses counter
+      //       guessesLeft=9;
+      //       console.log("guessesLeft" + guessesLeft);
+      //       document.getElementById("guesses").innerHTML = guessesLeft; 
+            
+      //       //resets Your Guesses so Far
+      //       guessesSoFar=[];
+
+      //     }
+
+
+      //     }; //this closing tag ties to .onkeyup function
+      
+     
 
     </script>
     
